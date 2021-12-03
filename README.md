@@ -22,5 +22,3 @@ PRIMARY KEY (customer_id)
 INSERT INTO customer (customer_first_name, customer_last_name, customer_balance, customer_username, customer_password) VALUES ("Kevin", "Nguyen", 50000, "KevinN11", "Kevin123");
 
 INSERT INTO customer (customer_first_name, customer_last_name, customer_balance, customer_username, customer_password) VALUES ("John", "Ham", 12320, "Admin111", "Admin00");
-
-SELECT * FROM customer;
