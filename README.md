@@ -6,7 +6,9 @@ The initial menu using Java Swing requires a login from the RDM Server which inc
 It allows a customer to withdraw/deposit/signout from their account, and updates the SQL table as required.
 
 
-SQL DATA TO CREATE TABLE FOR TEST PURPOSES:\n
+SQL DATA TO CREATE TABLE FOR TEST PURPOSES:
+
+
 CREATE TABLE customer(
 customer_id int auto_increment,
 customer_first_name varchar(25) NOT NULL,
