@@ -4,9 +4,10 @@ Project that queries a Relationship Database Management System (MYSQL server) si
 
 The initial menu using Java Swing requires a login from the RDM Server which includes a username and password. 
 It allows a customer to withdraw/deposit/signout from their account, and updates the SQL table as required.
+Can now query from a online DB hosted by RemoteMySQL.com. Code has been adjusted to make the connection.
 
 
-SQL DATA TO CREATE TABLE FOR TEST PURPOSES:
+SQL DATA TO CREATE TABLE FOR TEST PURPOSES IF ONLINE DB IS NOT WORKING:
 
 
 CREATE TABLE customer(
