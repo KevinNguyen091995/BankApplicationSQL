@@ -7,7 +7,7 @@ The initial menu using Java Swing requires a login from the RDM Server which inc
 It allows a customer to withdraw/deposit/signout from their account, and updates the SQL table as required.
 
 
-**Can now query from a online DB hosted by RemoteMySQL.com. Code has been adjusted to make the connection.**
+**Can now query from a online DB hosted by RemoteMySQL.com instead of a local server on MYSQL. Code has been adjusted to make the connection.**
 
 
 
