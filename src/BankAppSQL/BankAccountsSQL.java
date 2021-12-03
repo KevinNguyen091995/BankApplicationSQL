@@ -196,7 +196,6 @@ public class BankAccountsSQL{
 				
 				else {
 					this.balance = balance - withdrawAmount;
-					System.out.println(balance);
 					
 					//Updating balance to SQL server
 					PreparedStatement ps1 = con.prepareStatement("UPDATE customer SET customer_balance = ? WHERE customer_first_name = ? AND customer_last_name = ?;");
