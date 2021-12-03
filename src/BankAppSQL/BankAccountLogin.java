@@ -22,7 +22,8 @@ public class BankAccountLogin extends JFrame implements ActionListener{
 	private JTextField password;
 	private JTextField balanceField;
 	
-	private JLabel lblNewLabel_1;
+	private JLabel passwordLabel;
+	private JLabel balanceLabel;
 	
 	private JButton LoginButton;
 	private JButton WithdrawButton;
@@ -46,9 +47,9 @@ public class BankAccountLogin extends JFrame implements ActionListener{
 		lblNewLabel.setBounds(10, 14, 99, 51);
 		contentPane.add(lblNewLabel);
 		
-		lblNewLabel_1 = new JLabel("Password");
-		lblNewLabel_1.setBounds(10, 76, 99, 79);
-		contentPane.add(lblNewLabel_1);
+		passwordLabel = new JLabel("Password");
+		passwordLabel.setBounds(10, 76, 99, 79);
+		contentPane.add(passwordLabel);
 		
 		password = new JTextField();
 		password.setColumns(10);
@@ -93,9 +94,10 @@ public class BankAccountLogin extends JFrame implements ActionListener{
 		lblNewLabel.setBounds(10, 11, 269, 23);
 		contentPane1.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("Your balance: $" + SQL.getBalance1());
-		lblNewLabel_1.setBounds(10, 71, 269, 39);
-		contentPane1.add(lblNewLabel_1);
+		JLabel balanceLabel = new JLabel("BALANCE: $" + SQL.getBalance1());
+		balanceLabel.setBounds(10, 71, 269, 39);
+		contentPane1.add(balanceLabel);
+		this.balanceLabel = balanceLabel;
 		
 		balanceField = new JTextField();
 		balanceField.setBounds(10, 140, 269, 29);
@@ -113,10 +115,12 @@ public class BankAccountLogin extends JFrame implements ActionListener{
 	}
 	if(LoginMenu.getSource() == DepositButton) {
 		SQL.accountDeposit(balanceField.getText());
+		balanceLabel.setText(("BALANCE: $" + SQL.getBalance1()));
 		}
 	
 	if(LoginMenu.getSource() == WithdrawButton) {
 		SQL.accountWithdrawal(balanceField.getText());
+		balanceLabel.setText(("BALANCE: $" + SQL.getBalance1()));
 		}
 	if(LoginMenu.getSource() == SignOutButton) {
 		System.out.println("Thank you for using KBank!");
