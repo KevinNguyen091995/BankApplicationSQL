@@ -29,7 +29,7 @@ public class BankAccountsSQL{
 	private String jdbcDriver = "com.mysql.cj.jdbc.Driver";
 	private String serverName = "jdbc:mysql://remotemysql.com:3306/DmrmDDa2RC";
 	private String userName = "DmrmDDa2RC";
-	private String password = "u2wIN2Np2T";
+	private String password = "VmZwyXQo4v";
 	
 	//Check if username and password combination is valid.
 	public boolean SQLUserCheck(String customer_username, String customer_password) {
